@@ -23,6 +23,7 @@ Dynamic Product Management:
 3)Remove Products: Streamline inventory management by removing obsolete products.
 
 Efficient Order Handling:
+
 4)Create Orders: Generate new orders by selecting products and specifying quantities with ease.
 
 5)Track Orders: Monitor order status and details to ensure timely fulfillment and customer satisfaction.
@@ -33,6 +34,7 @@ Efficient Order Handling:
 Components
 
 Backend
+
 1)server.py:
 Serves as the core of the application, handling API requests and routing.
 Manages endpoints for product management, order processing, and UOM retrieval.
