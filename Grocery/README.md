@@ -1,23 +1,57 @@
 # python_projects_grocery_webapp
-In this python project, we will build a grocery store management application. It will be 3 tier application,
+In this python project, a grocery store management application. It will be 3 tier application,
 1. Front end: UI is written in HTML/CSS/Javascript/Bootstrap
 2. Backend: Python and Flask
 3. Database: mysql
 
-![](homepage.JPG)
+Grocery Store Management System (GSMS)
 
-### Installation Instructions
+Overview
 
-Download mysql for windows: https://dev.mysql.com/downloads/installer/
+Welcome to the Grocery Store Management System (GSMS) – a sophisticated and user-friendly solution designed to revolutionize grocery store operations. GSMS empowers store owners and managers to efficiently handle product inventories, streamline order processing, and gain actionable insights into their business.
 
-`pip install mysql-connector-python`
+Built with Flask and MySQL, GSMS is crafted to provide a seamless and intuitive experience, making store management tasks more straightforward and less time-consuming.
 
-### Exercise 
+Key Features
 
-The grocery management system that we built is functional but after we give it to users for use, we got following feedback. The exercise for you to address this feedback and implement these features in the application,
-1. **Products Module**: In products page that lists current products, add an edit button next to delete button that allows to edit current product
-2. **Products Module**: Implement a new form that allows you to add new UOM in the application. For example you want to add **Cubic Meter** as a new UOM as the grocery store decided to start selling **wood** as well. This requies changing backend (python server) and front end (UI) both.
-3. **Orders Module**: When you place an order it doesn't have any validation. For example one can enter an order with empty customer name. You need to add validation for customer name and invalid item name or not specifying a quantity etc. This is only front end UI work.
-4. **Orders Module**: In new order page there is a bug. When you manually change total price of an item it doesn't change the grand total. You need to fix this issue.
-5. **Orders Module**: In the grid where orders are listed, add a view button in the last column. On clicking this button it should show you order details where individual items in that order are listed along with their price/quantity etc.
+Dynamic Product Management:
+
+1)Add & Update Products: Effortlessly manage your inventory by adding new products or updating existing ones.
+
+2)View & Search: Access detailed product information and use search functionality to quickly locate items.
+
+3)Remove Products: Streamline inventory management by removing obsolete products.
+
+Efficient Order Handling:
+4)Create Orders: Generate new orders by selecting products and specifying quantities with ease.
+
+5)Track Orders: Monitor order status and details to ensure timely fulfillment and customer satisfaction.
+
+6)Unit of Measurement (UOM) Management:
+
+7)Retrieve UOMs: Access a comprehensive list of measurement units for accurate product handling and sales.
+Components
+
+Backend
+1)server.py:
+Serves as the core of the application, handling API requests and routing.
+Manages endpoints for product management, order processing, and UOM retrieval.
+
+2)sql_connection.py:
+Establishes and maintains the connection to the MySQL database.
+
+3)ordersdao.py:
+Facilitates operations related to order management, including creation, retrieval, and listing.
+
+4)products_dao.py:
+Manages product-related functions, including addition, deletion, and retrieval.
+
+5)uom_dao.py:
+Handles data related to units of measurement.
+
+Frontend
+manage-product.html:
+Provides an interactive interface for managing product data. Features include adding new products and viewing existing ones.
+order.html:
+Offers a streamlined interface for placing and managing orders. Users can add products to orders and view order summaries.
 
